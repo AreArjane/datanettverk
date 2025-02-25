@@ -1,0 +1,13 @@
+
+├── README
+├── ping.txt
+├── src
+│   ├── args.py
+│   └── jains.py
+├── thoughtput_values.txt
+└── traceroute.txt
+
+jains.py contain Jains Fairs argument, and command line for single index or file path [thoughtput_values.txt]
+args.py represent TASK3 create command line following argparse
+ping.txt explains the ping with the website been provided in TASK 4
+traceroute.txt explain traceroute with example with google.com

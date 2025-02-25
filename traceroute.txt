@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------------------
+TTL(Time to Live) value first represented when it use ICMP package
+when heats first the router will the exceeded value represented to the source machine 
+The source computer record the IP address and make an increment of TTL 
+and send another request to router, then this router will forward to 
+another router, so if it does not heat the destination, it will be back to the source machine again 
+and the TTL will increase until it reaches its destination. Some router have blocking like fireware and 
+therefore ms not represented twice in every TTL
+--------------------------------------------------------------------------------------------
+EX:
+traceroute www.google.com
+traceroute to www.google.com (142.251.36.36), 64 hops max, 52 byte packets
+ 1  10.11.12.1                 (10.11.12.1)     17.807 ms  16.982 ms  16.733 ms
+ 2  hosted-by.i3d.net        (31.204.129.2)     19.768 ms
+    hosted-by.i3d.net        (31.204.129.3)     17.381 ms
+    hosted-by.i3d.net        (31.204.129.2)     17.254 ms
+ 3  nlams1-rt001i.i3d.net    (109.200.218.73)   18.316 ms  18.601 ms
+    nlams1-rt001i.i3d.net    (109.200.218.85)   24.069 ms
+ 4  core1.ams.net.google.com (80.249.208.247)   18.801 ms  18.994 ms  18.867 ms
+ 5  108.170.241.193          (108.170.241.193)  18.793 ms  18.537 ms
+    108.170.241.225          (108.170.241.225)  19.688 ms
+ 6  142.251.66.239           (142.251.66.239)   19.119 ms
+    142.251.66.241           (142.251.66.241)   18.403 ms  18.638 ms
+ 7  ams17s12-in-f4.1e100.net (142.251.36.36)    18.221 ms  18.069 ms  18.692 ms

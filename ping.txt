@@ -1,0 +1,24 @@
+To achive this with Mac I use ping -c 10 domain 
+stddev= standart deviation of RTT
+----------------------------------------------------------------------------------
+oslomet.no
+round-trip min/avg/max/stddev = 32.434/32.844/33.131/0.216 ms
+----------------------------------------------------------------------------------
+ox.ac.uk
+round-trip min/avg/max/stddev = 20.745/20.975/21.150/0.119 ms
+----------------------------------------------------------------------------------
+gaia.cs.umass.edu
+10 packets transmitted, 0 packets received, 100.0% packet loss
+----------------------------------------------------------------------------------
+sydney.edu.au
+round-trip min/avg/max/stddev = 279.025/279.516/279.693/0.241 ms
+----------------------------------------------------------------------------------
+
+Here it show the most efficient rate was in ox.ac.uk with the min RTT 20.745, this can be due higher amount 
+of students and universities implementing several hops and switches that make the connection significantly faster.
+The package loss can be due routing issue or non configure, or blocking the ping search as this are possible 
+also in every mac machine, gaia.cs.umass.edu are reachable on browser.
+in sydney.edu.au this could be depending on the geografical distance as the data need to transfer and therfore impact
+minmumm round tripe time.
+
+
